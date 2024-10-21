@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Киногид - Рецензии на фильмы</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            margin-right: 20px;
+        }
+
+        .search-form {
+            display: flex;
+            align-items: center;
+            margin-right: auto;
+        }
+
+        .search-form input {
+            padding: 5px;
+            margin-right: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .genre-menu {
+            background: #e9e9e9;
+            padding: 10px;
+            border-radius: 5px;
+            width: 20%;
+        }
+
+        .genre-menu h5 {
+            margin-top: 0;
+        }
+
+        .new-movies {
+            background: #f9f9f9;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            flex-grow: 1;
+        }
+
+        .popular-reviews {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .film-card {
+            background: #f9f9f9;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        @media (min-width: 768px) {
+            .row {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .main-content {
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+                margin-left: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Верхняя панель -->
+    <header>
+        <div class="logo">Киногид</div>
+        <form class="search-form">
+            <input type="search" placeholder="Поиск по названию" aria-label="Поиск">
+            <button type="submit">Поиск</button>
+        </form>
+        <nav>
+            <a href="#">Личный кабинет</a>
+            <a href="#">Регистрация</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <!-- Боковое меню с жанрами -->
+            <div class="genre-menu">
+                <h5>Жанры</h5>
+                <ul>
+                    <li><a href="#">Комедия</a></li>
+                    <li><a href="#">Драма</a></li>
+                    <li><a href="#">Боевик</a></li>
+                    <li><a href="#">Фантастика</a></li>
+                    <li><a href="#">Ужасы</a></li>
+                    <li><a href="#">Мелодрама</a></li>
+                </ul>
+            </div>
+
+            <!-- Новости о новинках и популярные рецензии -->
+            <div class="main-content">
+                <div class="new-movies">
+                    <h4>Новости о новинках</h4>
+                    <div class="film-card">
+                        <h5>Фильм 1 - Новая премьера</h5>
+                        <p>Описание и информация о новой премьере...</p>
+                    </div>
+                    <div class="film-card">
+                        <h5>Фильм 2 - Что стоит посмотреть?</h5>
+                        <p>Обзор и детали...</p>
+                    </div>
+                    <!-- Добавьте больше новостей по мере необходимости -->
+                </div>
+
+                <!-- Популярные рецензии -->
+                <div class="popular-reviews">
+                    <h5>Популярные рецензии</h5>
+                    <div class="film-card">
+                        <h6>Фильм 1</h6>
+                        <p>Краткая рецензия на фильм...</p>
+                    </div>
+                    <div class="film-card">
+                        <h6>Фильм 2</h6>
+                        <p>Краткая рецензия на фильм...</p>
+                    </div>
+                    <!-- Добавьте больше рецензий по мере необходимости -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Киногид. Все права защищены.</p>
+    </footer>
+</body>
+
+</html>
