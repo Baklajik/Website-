@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Киногид - Рецензии на фильмы</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Верхняя панель -->
+    <header>
+        <div class="logo">Киногид</div>
+        <form class="search-form">
+            <input type="search" placeholder="Поиск по названию" aria-label="Поиск">
+            <button type="submit">Поиск</button>
+        </form>
+        <nav>
+            <a href="#">Личный кабинет</a>
+            <a href="#">Регистрация</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <!-- Боковое меню с жанрами -->
+            <div class="genre-menu">
+                <h5>Жанры</h5>
+                <ul>
+                    <li><a href="#">Комедия</a></li>
+                    <li><a href="#">Драма</a></li>
+                    <li><a href="#">Боевик</a></li>
+                    <li><a href="#">Фантастика</a></li>
+                    <li><a href="#">Ужасы</a></li>
+                    <li><a href="#">Мелодрама</a></li>
+                </ul>
+            </div>
+
+            <!-- Новости о новинках и популярные рецензии -->
+            <div class="main-content">
+                <div class="new-movies">
+                    <h4>Новости о новинках</h4>
+                    <div class="film-card">
+                        <h5>Фильм 1 - Новая премьера</h5>
+                        <p>Описание и информация о новой премьере...</p>
+                    </div>
+                    <div class="film-card">
+                        <h5>Фильм 2 - Что стоит посмотреть?</h5>
+                        <p>Обзор и детали...</p>
+                    </div>
+                    <!-- Добавьте больше новостей по мере необходимости -->
+                </div>
+
+                <!-- Популярные рецензии -->
+                <div class="popular-reviews">
+                    <h5>Популярные рецензии</h5>
+                    <div class="film-card">
+                        <h6>Фильм 1</h6>
+                        <p>Краткая рецензия на фильм...</p>
+                    </div>
+                    <div class="film-card">
+                        <h6>Фильм 2</h6>
+                        <p>Краткая рецензия на фильм...</p>
+                    </div>
+                    <!-- Добавьте больше рецензий по мере необходимости -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Киногид. Все права защищены.</p>
+    </footer>
+</body>
+
+</html>
