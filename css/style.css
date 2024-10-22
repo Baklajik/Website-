@@ -49,11 +49,20 @@ nav a {
     padding: 10px;
     border-radius: 5px;
     width: 20%;
-    text-decoration: none;
 }
 
 .genre-menu h5 {
     margin-top: 0;
+}
+
+.genre-menu a{
+    text-decoration: none;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.genre-menu li{
+    margin-bottom: 20px;
 }
 
 .new-movies {
