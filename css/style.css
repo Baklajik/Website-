@@ -49,6 +49,7 @@ nav a {
     padding: 10px;
     border-radius: 5px;
     width: 20%;
+    text-decoration: none;
 }
 
 .genre-menu h5 {
