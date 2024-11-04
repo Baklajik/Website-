@@ -116,7 +116,7 @@ footer {
 
 .poster { 
     width: 302px; 
-    height: 453px; 
+    height: 540px; 
     margin-right: 20px; 
     } 
 
@@ -157,7 +157,7 @@ footer {
     padding: 20px; 
     width: 78%; 
     margin-top: 20px; 
-    margin-left: 190px;
+    margin-left: 150px;
     } 
 
 .comments-section h2 { 
@@ -194,7 +194,7 @@ footer {
     padding: 20px; 
     width: 78%; 
     margin-top: 20px; 
-    margin-left: 190px; 
+    margin-left: 150px; 
     } 
 
 .published-comments h2 { 
