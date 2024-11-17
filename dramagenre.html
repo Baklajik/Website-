@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фильмы по жанрам</title>
+    <link rel="stylesheet" href="css/drama.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href = "index.html">Киногид</a>
+        </div>
+        <form class="search-form">
+            <input type="search" placeholder="Поиск по названию" aria-label="Поиск">
+            <button type="submit">Поиск</button>
+        </form>
+        <nav>
+            <a href="#">Личный кабинет</a>
+            <a href="#">Регистрация</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="sidebar"> 
+            <div class="dropdown"> 
+                <button onclick="toggleDropdown(this)">Страны</button> 
+                <div class="dropdown-content"> 
+                    <a href="#">Все страны</a> 
+                    <a href="#">США</a>
+                    <a href="#">Франция</a>
+                    <a href="#">Великобритания</a>
+                    <a href="#">Канада</a>
+                    <a href="#">Мексика</a>
+                    <a href="#">Китай</a>      
+                </div> 
+            </div> 
+            <div class="dropdown"> 
+                <button onclick="toggleDropdown(this)">Жанры</button> 
+                <div class="dropdown-content"> 
+                    <a href="#">Комедии</a> 
+                    <a href="dramagenre.html">Драма</a> 
+                    <a href="#">Фантастика</a>
+                    <a href="#">Боевик</a>
+                    <a href="#">Ужасы</a>
+                    <a href="#">Мелодрама</a>     
+                </div> 
+            </div> 
+            <div class="dropdown"> 
+                <button onclick="toggleDropdown(this)">Годы</button> 
+                <div class="dropdown-content"> 
+                    <a href="#">Все годы</a>
+                    <a href="#">1950</a>
+                    <a href="#">1951</a>
+                    <a href="#">1952</a>
+                    <a href="#">1953</a>
+                    <a href="#">1954</a>
+                    <a href="#">1955</a>
+                    <a href="#">1956</a>
+                    <a href="#">1957</a>
+                    <a href="#">1958</a>
+                    <a href="#">1959</a>
+                    <a href="#">1960</a>
+                    <a href="#">1961</a>
+                    <a href="#">1962</a>
+                    <a href="#">1963</a>
+                    <a href="#">1964</a>
+                    <a href="#">1965</a>
+                    <a href="#">1966</a>
+                    <a href="#">1967</a>
+                    <a href="#">1968</a>
+                    <a href="#">1969</a>
+                    <a href="#">1970</a>
+                    <a href="#">1971</a>
+                    <a href="#">1972</a>
+                    <a href="#">1973</a>
+                    <a href="#">1974</a>
+                    <a href="#">1975</a>
+                    <a href="#">1976</a>
+                    <a href="#">1977</a>
+                    <a href="#">1978</a>
+                    <a href="#">1979</a>
+                    <a href="#">1980</a>
+                    <a href="#">1981</a>
+                    <a href="#">1982</a>
+                    <a href="#">1983</a>
+                    <a href="#">1984</a>
+                    <a href="#">1985</a>
+                    <a href="#">1986</a>
+                    <a href="#">1987</a>
+                    <a href="#">1988</a>
+                    <a href="#">1989</a>
+                    <a href="#">1990</a>
+                    <a href="#">1991</a>
+                    <a href="#">1992</a>
+                    <a href="#">1993</a>
+                    <a href="#">1994</a>
+                    <a href="#">1995</a>
+                    <a href="#">1996</a>
+                    <a href="#">1997</a>
+                    <a href="#">1998</a>
+                    <a href="#">1999</a>
+                    <a href="#">2000</a>
+                    <a href="#">2001</a>
+                    <a href="#">2002</a>
+                    <a href="#">2003</a>
+                    <a href="#">2004</a>
+                    <a href="#">2005</a>
+                    <a href="#">2006</a>
+                    <a href="#">2007</a>
+                    <a href="#">2008</a>
+                    <a href="#">2009</a>
+                    <a href="#">2010</a>
+                    <a href="#">2011</a>
+                    <a href="#">2012</a>
+                    <a href="#">2013</a>
+                    <a href="#">2014</a>
+                    <a href="#">2015</a>
+                    <a href="#">2016</a>
+                    <a href="#">2017</a>
+                    <a href="#">2018</a>
+                    <a href="#">2019</a>
+                    <a href="#">2020</a>
+                    <a href="#">2021</a>
+                    <a href="#">2022</a>
+                    <a href="#">2023</a>
+                    <a href="#">2024</a>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <h1>Фильмы выбранного жанра</h1>
+            <div class="film-row">
+                <div class="film-card">
+                    <a href = "dramafilm1.html"><img src="https://thumbs.dfs.ivi.ru/storage5/contents/6/1/0ceca03c51c3d38f34bdf3fd0dd2c8.jpg" alt="Постер фильма Один дома"></a>
+                    <div class="film-info">
+                        <a href = "dramafilm1.html"><h3>1 + 1</h3></a>
+                        <p><strong>Год:</strong> 2011</p>
+                        <p><strong>Длительность:</strong> 1 час 52 минуты</p>
+                        <p><strong>Страна:</strong> Франция</p>
+                        <p><strong>Жанр:</strong> Драма</p>
+                        <p><strong>Режиссёр:</strong>Оливье Накаш, Эрик Толедано</p>
+                        <p><strong>Актёры:</strong> Франсуа Клюзе, Омар Си, нн Ле Ни</p>
+                        <div class="rating">
+                            <span>Рейтинг:</span>
+                            <strong>8.8</strong>
+                            <span>(2M отзывов)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="film-card">
+                    <a href = "dramafilm2.html"><img src="https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/4057c4b8-8208-4a04-b169-26b0661453e3/600x900" alt="Постер фильма Один дома"></a>
+                    <div class="film-info">
+                        <a href = "dramafilm2.html"><h3>Зелёная Миля (The Green Mile)</h3></a>
+                        <p><strong>Год:</strong> 1999</p>
+                        <p><strong>Длительность:</strong> 3 часа 9 минут</p>
+                        <p><strong>Страна:</strong> США</p>
+                        <p><strong>Жанр:</strong> Драма</p>
+                        <p><strong>Режиссёр:</strong>Фрэнк Дарабонт</p>
+                        <p><strong>Актёры:</strong> Том Хэнкс, Дэвид Морс, Бонни Хант</p>
+                        <div class="rating">
+                            <span>Рейтинг:</span>
+                            <strong>9.1</strong>
+                            <span>(1M отзывов)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script> 
+        function toggleDropdown(element) { 
+            element.classList.toggle("active"); 
+            var dropdownContent = element.nextElementSibling; 
+            if (dropdownContent.style.display === "block") { 
+                dropdownContent.style.display = "none"; 
+            } 
+            else { 
+                dropdownContent.style.display = "block"; 
+            } 
+        } 
+    </script>
+</body>
+</html>
