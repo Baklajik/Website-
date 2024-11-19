@@ -88,6 +88,18 @@ nav a {
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    line-height: 1.5;
+}
+.film-card a {
+
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.film-card img {
+    width: 400px;
+    height: 600px;
 }
 
 footer {
