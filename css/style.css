@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f4f4f4;
-}
+    background: linear-gradient(to bottom, #080808, #700101);
+   
 
 header {
     background: #333;
@@ -14,26 +14,48 @@ header {
 }
 
 .logo {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-right: 20px;
 }
 
 .search-form {
+    
     display: flex;
     align-items: center;
     margin-right: auto;
 }
 
 .search-form input {
-    padding: 5px;
+    padding: 10px;
     margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.search-form button {
+    padding: 10px 15px;
+    background-color: #007BFF; 
+    color: rgb(233, 226, 226);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #0056b3; /* Темнее при наведении */
 }
 
 nav a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
+    
 }
+
+nav a:hover {
+    color: #1b1c1d; /* Подсветка при наведении */
+}
+
 
 .container {
     max-width: 1200px;
@@ -88,32 +110,43 @@ nav a {
     padding: 15px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    line-height: 1.5;
+    line-height: 2; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 .film-card a {
 
     text-decoration: none;
-    color: black;
+    color: rgb(99, 7, 7);
     font-size: 20px;
+    display: flex; /* Используйте flexbox для выравнивания */
+    justify-content: center; /* Центрирование по горизонтали */
+    
 }
 
 .film-card img {
+    
     width: 400px;
     height: 600px;
+    border-radius: 5px; /* Скругление углов изображений */
+    margin: 10px auto 20px;
+    display: block;
 }
+
 
 footer {
     text-align: center;
     padding: 20px;
-    background: #333;
-    color: #fff;
+    background: #080405;
+    color: #1a5e4c;
     position: relative;
     bottom: 0;
+    left:0;
     width: 100%;
-}
+}   
 .film-row {
     display: flex;
-    gap: 50px;
+    gap: 100px;
 }
 .Mainposter {
     position: relative;
@@ -127,7 +160,9 @@ footer {
     height: 100%;
     backface-visibility: hidden;
     transition: transform 0.6s;
+    border-radius: 5px; /* Скругление углов */  
 }
+
 
 .Mainposter .info {
     position: absolute;
@@ -144,7 +179,7 @@ footer {
     backface-visibility: hidden;
     transform: rotateY(180deg);
     transition: transform 0.6s;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .Mainposter:hover img {
