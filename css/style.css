@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     background: linear-gradient(to bottom, #080808, #700101);
+}
    
 
 header {
@@ -42,7 +43,7 @@ header {
 }
 
 .search-form button:hover {
-    background-color: #0056b3; /* Темнее при наведении */
+    background-color: #0056b3; 
 }
 
 nav a {
@@ -53,7 +54,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #1b1c1d; /* Подсветка при наведении */
+    color: #1b1c1d; 
 }
 
 
@@ -119,8 +120,8 @@ nav a:hover {
     text-decoration: none;
     color: rgb(99, 7, 7);
     font-size: 20px;
-    display: flex; /* Используйте flexbox для выравнивания */
-    justify-content: center; /* Центрирование по горизонтали */
+    display: flex; 
+    justify-content: center; 
     
 }
 
@@ -128,22 +129,20 @@ nav a:hover {
     
     width: 400px;
     height: 600px;
-    border-radius: 5px; /* Скругление углов изображений */
+    border-radius: 5px; 
     margin: 10px auto 20px;
     display: block;
 }
-
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #080405;
+footer{
+    background-color: black;
+    padding: 32px 0 32px;
     color: #1a5e4c;
-    position: relative;
-    bottom: 0;
-    left:0;
-    width: 100%;
-}   
+}
+
+.footer p{
+    text-align: center;
+}
+
 .film-row {
     display: flex;
     gap: 100px;
@@ -160,7 +159,7 @@ footer {
     height: 100%;
     backface-visibility: hidden;
     transition: transform 0.6s;
-    border-radius: 5px; /* Скругление углов */  
+    border-radius: 5px; 
 }
 
 
