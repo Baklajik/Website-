@@ -168,3 +168,10 @@ nav a {
 nav a:hover {
     color: #1b1c1d; 
 }
+
+footer{
+    background-color: black;
+    padding: 32px 0 32px;
+    color: #1a5e4c;
+    text-align: center;
+}

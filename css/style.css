@@ -19,6 +19,11 @@ header {
     margin-right: 20px;
 }
 
+.logo a{
+    text-decoration: none;
+    color: #fff;
+}
+
 .search-form {
     
     display: flex;
@@ -137,9 +142,6 @@ footer{
     background-color: black;
     padding: 32px 0 32px;
     color: #1a5e4c;
-}
-
-.footer p{
     text-align: center;
 }
 
