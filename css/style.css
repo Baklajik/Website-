@@ -3,7 +3,6 @@ body {
     margin: 0;
     background: linear-gradient(to bottom, #080808, #700101);
 }
-   
 
 header {
     background: #333;
@@ -12,6 +11,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -19,13 +19,12 @@ header {
     margin-right: 20px;
 }
 
-.logo a{
+.logo a {
     text-decoration: none;
     color: #fff;
 }
 
 .search-form {
-    
     display: flex;
     align-items: center;
     margin-right: auto;
@@ -37,9 +36,10 @@ header {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
 .search-form button {
     padding: 10px 15px;
-    background-color: #007BFF; 
+    background-color: #007BFF;
     color: rgb(233, 226, 226);
     border: none;
     border-radius: 4px;
@@ -48,20 +48,18 @@ header {
 }
 
 .search-form button:hover {
-    background-color: #0056b3; 
+    background-color: #0056b3;
 }
 
 nav a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
-    
 }
 
 nav a:hover {
-    color: #1b1c1d; 
+    color: #1b1c1d;
 }
-
 
 .container {
     max-width: 1200px;
@@ -81,18 +79,20 @@ nav a:hover {
     width: 20%;
     max-height: 300px;
 }
-
+.row {
+    display: flex;
+}
 .genre-menu h5 {
     margin-top: 0;
 }
 
-.genre-menu a{
+.genre-menu a {
     text-decoration: none;
     color: black;
     margin-bottom: 20px;
 }
 
-.genre-menu li{
+.genre-menu li {
     margin-bottom: 20px;
 }
 
@@ -116,32 +116,33 @@ nav a:hover {
 .film-card {
     background: #f9f9f9;
     margin-bottom: 20px;
-    padding: 15px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    line-height: 2; 
+    line-height: 2;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.film-card a {
 
+.film-card a {
     text-decoration: none;
     color: rgb(99, 7, 7);
     font-size: 20px;
-    display: flex; 
-    justify-content: center; 
-    
+    display: flex;
+    justify-content: center;
 }
 
 .film-card img {
-    
     width: 400px;
     height: 600px;
-    border-radius: 5px; 
+    border-radius: 5px;
     margin: 10px auto 20px;
     display: block;
 }
-footer{
+
+footer {
     background-color: #333;
     padding: 32px 0 32px;
     color: #1a5e4c;
@@ -151,11 +152,13 @@ footer{
 .film-row {
     display: flex;
     gap: 100px;
+    flex-wrap: wrap;
 }
+
 .Mainposter {
     position: relative;
-    width: 250px;
-    height: 350px;
+    width: 220px;
+    height: 320px;
     perspective: 1000px;
 }
 
@@ -164,15 +167,14 @@ footer{
     height: 100%;
     backface-visibility: hidden;
     transition: transform 0.6s;
-    border-radius: 5px; 
+    border-radius: 5px;
 }
-
 
 .Mainposter .info {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 85%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
@@ -197,15 +199,51 @@ footer{
 }
 
 @media (min-width: 768px) {
-    .row {
-        display: flex;
-        justify-content: space-between;
+    .container {
+        flex-direction: row;
     }
-
-    .main-content {
-        display: flex;
-        flex-direction: column;
+    .genre-menu {
+        width: 20%;
+        margin-right: 20px;
+    }
+    .content {
         flex-grow: 1;
-        margin-left: 20px;
     }
 }
+
+@media (max-width: 767px) {
+    .header {
+        flex-direction: column;
+    }
+    .search-form {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .container {
+        padding: 10px;
+    }
+    .genre-menu {
+        width: 100%;
+        max-height: none;
+        margin-bottom: 20px;
+    }
+    .film-row {
+        flex-direction: column;
+    }
+    .film-card {
+        width: 100%;
+    }
+    .film-card img {
+        width: 100%;
+        height: auto;
+    }
+    .Mainposter {
+        width: 100%;
+        height: auto;
+    }
+    .Mainposter img {
+        width: 100%;
+        height: auto;
+    }
+}
+
