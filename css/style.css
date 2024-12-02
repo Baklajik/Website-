@@ -3,7 +3,10 @@ body {
     margin: 0;
     background: linear-gradient(to bottom, #080808, #700101);
 }
+<<<<<<< HEAD
    
+=======
+>>>>>>> 0cfbab713e9f9e17eb4e2691acf3f2d27fff2ada
 
 
 header {
@@ -13,6 +16,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .logo {
@@ -20,6 +24,7 @@ header {
     margin-right: 20px;
 }
 
+<<<<<<< HEAD
 .hidden-ad {
     display: none;
     position: fixed;
@@ -49,10 +54,14 @@ header {
     cursor: pointer;
     margin-top: 10px;
     border-radius: 4px;
+=======
+.logo a {
+    text-decoration: none;
+    color: #fff;
+>>>>>>> 0cfbab713e9f9e17eb4e2691acf3f2d27fff2ada
 }
 
 .search-form {
-    
     display: flex;
     align-items: center;
     margin-right: auto;
@@ -64,9 +73,10 @@ header {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
 .search-form button {
     padding: 10px 15px;
-    background-color: #007BFF; 
+    background-color: #007BFF;
     color: rgb(233, 226, 226);
     border: none;
     border-radius: 4px;
@@ -75,20 +85,26 @@ header {
 }
 
 .search-form button:hover {
+<<<<<<< HEAD
     background-color: #0056b3; 
+=======
+    background-color: #0056b3;
+>>>>>>> 0cfbab713e9f9e17eb4e2691acf3f2d27fff2ada
 }
 
 nav a {
     color: white;
     margin: 0 15px;
     text-decoration: none;
-    
 }
 
 nav a:hover {
+<<<<<<< HEAD
     color: #1b1c1d; 
+=======
+    color: #1b1c1d;
+>>>>>>> 0cfbab713e9f9e17eb4e2691acf3f2d27fff2ada
 }
-
 
 .container {
     max-width: 1200px;
@@ -97,6 +113,8 @@ nav a:hover {
     background: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
 }
 
 .genre-menu {
@@ -104,19 +122,22 @@ nav a:hover {
     padding: 10px;
     border-radius: 5px;
     width: 20%;
+    max-height: 300px;
 }
-
+.row {
+    display: flex;
+}
 .genre-menu h5 {
     margin-top: 0;
 }
 
-.genre-menu a{
+.genre-menu a {
     text-decoration: none;
     color: black;
     margin-bottom: 20px;
 }
 
-.genre-menu li{
+.genre-menu li {
     margin-bottom: 20px;
 }
 
@@ -140,18 +161,21 @@ nav a:hover {
 .film-card {
     background: #f9f9f9;
     margin-bottom: 20px;
-    padding: 15px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    line-height: 2; 
+    line-height: 2;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.film-card a {
 
+.film-card a {
     text-decoration: none;
     color: rgb(99, 7, 7);
     font-size: 20px;
+<<<<<<< HEAD
     display: flex; 
     justify-content: center; 
     
@@ -161,27 +185,50 @@ nav a:hover {
     width: 60% ;
     height: auto;
     border-radius: 5px; 
+=======
+    display: flex;
+    justify-content: center;
+}
+
+.film-card img {
+    width: 400px;
+    height: 600px;
+    border-radius: 5px;
+>>>>>>> 0cfbab713e9f9e17eb4e2691acf3f2d27fff2ada
     margin: 10px auto 20px;
     display: block;
 }
 
+<<<<<<< HEAD
 footer{
     background-color: black;
+=======
+footer {
+    background-color: #333;
+>>>>>>> 0cfbab713e9f9e17eb4e2691acf3f2d27fff2ada
     padding: 32px 0 32px;
     color: #1a5e4c;
     text-align: center;
 }
 
+<<<<<<< HEAD
 
 
 .film-row {
     display: flex;
     gap: 80px;
+=======
+.film-row {
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+>>>>>>> 0cfbab713e9f9e17eb4e2691acf3f2d27fff2ada
 }
+
 .Mainposter {
     position: relative;
-    width: 250px;
-    height: 350px;
+    width: 220px;
+    height: 320px;
     perspective: 1000px;
 }
 
@@ -190,15 +237,18 @@ footer{
     height: 100%;
     backface-visibility: hidden;
     transition: transform 0.6s;
+<<<<<<< HEAD
     border-radius: 5px; 
+=======
+    border-radius: 5px;
+>>>>>>> 0cfbab713e9f9e17eb4e2691acf3f2d27fff2ada
 }
-
 
 .Mainposter .info {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 85%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     color: white;
@@ -210,6 +260,8 @@ footer{
     transform: rotateY(180deg);
     transition: transform 0.6s;
     font-size: 12px;
+    padding-left: 15px;
+    padding-right: 10px;
 }
 
 .Mainposter:hover img {
@@ -221,10 +273,29 @@ footer{
 }
 
 @media (min-width: 768px) {
-    .row {
-        display: flex;
+    .container img {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .genre-menu {
+        width: 20%;
+        margin-right: 20px;
+    }
+    .content {
+        flex-grow: 1;
+    }
+}
+
+@media (max-width: 767px) {
+    .header {
+        flex-direction: column;
+    }
+    .search-form {
+        width: 100%;
         justify-content: space-between;
     }
+<<<<<<< HEAD
     .main-content {
         display: flex;
         flex-direction: column;
@@ -239,9 +310,37 @@ footer{
     }
     .advertisement {
         width: 100%;
+=======
+    .container {
+        padding: 10px;
+    }
+    .genre-menu {
+        width: 100%;
+        max-height: none;
+>>>>>>> 0cfbab713e9f9e17eb4e2691acf3f2d27fff2ada
         margin-bottom: 20px;
     }
     .film-row {
         flex-direction: column;
     }
+<<<<<<< HEAD
 }
+=======
+    .film-card {
+        width: 100%;
+    }
+    .film-card img {
+        width: 100%;
+        height: auto;
+    }
+    .Mainposter {
+        width: 100%;
+        height: auto;
+    }
+    .Mainposter img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+>>>>>>> 0cfbab713e9f9e17eb4e2691acf3f2d27fff2ada

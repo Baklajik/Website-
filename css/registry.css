@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap');
 
 body { 
-    font-family: Arial, sans-serif; 
-    background-color: #f4f4f4; 
+    font-family: Arial, sans-serif;  
     margin: 0; 
     padding: 0; 
     display: flex; 
@@ -19,7 +18,7 @@ body {
     box-shadow: 5px 10px 50px black;
     border-radius: 10px;
     font-family: 'Jost', sans-serif;
-    background: #573b8a;
+    background: linear-gradient(to bottom, #080808, #700101);
 }
 
 #switch {
@@ -59,8 +58,8 @@ input {
 button {
     width: 60%;
     height: 40px;
-    background: #573b8a;
-    color:#fff;
+    background: #fff;
+    color:linear-gradient(to bottom, #080808, #700101);;
     margin: 10px auto;
     justify-content: center;
     display: block;
@@ -76,7 +75,7 @@ button {
 
 .regbutton {
     background-color: #fff;
-    color: #573b8a;
+    color: linear-gradient(to bottom, #080808, #700101);;
 }
 
 .regbutton:hover {
@@ -84,7 +83,7 @@ button {
 }
 
 button:hover {
-    background: #6d44b8;
+    background: #ad9191;
 }
 
 .login {
@@ -96,7 +95,7 @@ button:hover {
 }
 
 .login label {
-    color: #573b8a;
+    color: #000;
     transform: scale(.6);
 }
 
