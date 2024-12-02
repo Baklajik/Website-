@@ -17,19 +17,58 @@
             <button type="submit">Поиск</button>
         </form>
         <nav>
-<<<<<<< HEAD
-            <a href="#"> Личный кабинет</a>
-            <a href="#"> Регистрация</a>
-=======
             <a href="#">Личный кабинет</a>
             <a href="registry.html">Регистрация/Вход</a>
->>>>>>> a51e6a9b5ded81ccd9ada8c2a72dc26c5a4c4f93
         </nav>
     </header>
+    
+ <!-- Скрытая реклама -->
+<div id="hidden-ad" class="hidden-ad" style="display: none;">
+    <a href="https://grodno.in/afisha/kino" target="_blank">
+        <img src="D:\Downloads\reklama.jpg" alt="Реклама">
+    </a>
+    <p>🔥 Эксклюзивное предложение для киноманов! Узнай больше.</p>
+    <button onclick="hideAd()">Закрыть</button>
+</div>
+
+<script>
+    // Функция для проверки прокрутки
+    window.addEventListener('scroll', function () {
+        const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+        const pageHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const middlePosition = pageHeight / 2;
+
+        // Если пользователь прокрутил до середины страницы
+        if (scrollPosition >= middlePosition) {
+            const ad = document.getElementById('hidden-ad');
+            if (ad && ad.style.display === 'none') {
+                ad.style.display = 'block'; // Показываем рекламу
+            }
+        }
+    });
+
+    // Функция для скрытия рекламы
+    function hideAd() {
+        const ad = document.getElementById('hidden-ad');
+        if (ad) {
+            ad.style.display = 'none';
+        }
+    }
+</script>
+
+    // Функция для скрытия рекламы
+    function hideAd() {
+        const ad = document.getElementById('hidden-ad');
+        if (ad) {
+            ad.style.display = 'none';
+            localStorage.setItem('adClosed', 'true'); // Сохраняем состояние
+        }
+    }
+</script>
 
     <div class="container">
         <div class="row">
-            <!-- Боковое меню с жанрами -->
+            <!-- Боковое меню с жанрами --> 
             <div class="genre-menu">
                 <h5>Жанры</h5>
                 <ul>
@@ -41,11 +80,12 @@
                     <li><a href="#">Мелодрама</a></li>
                 </ul>
             </div>
+           
 
              <!-- Новости о новинках и популярные рецензии -->
             <div class="main-content">
                 <div class="new-movies">
-                    <h4>Новости о новинках</h4>
+                    <h1>Новости о новинках</h1>
                 
                     <div class="film-card">
                         <img src="D:\Downloads\starwars.jpg" alt="Фильм 1">
@@ -69,7 +109,7 @@
                 </div>
             -->
                 <div class="movies-info">
-                    <h4>Точно стоит посмотреть в ближайшее время</h4>
+                    <h1>Точно стоит посмотреть в ближайшее время</h1>
                 <div class="film-row">
                     <div class="film-card">
                         <div class="Mainposter">
@@ -116,7 +156,7 @@
         </div>
     </div>
 
-    <footer>
+    <footer class="footer">
         <p>&copy; 2024 Киногид. Все права защищены.</p>
     </footer>
 </body>

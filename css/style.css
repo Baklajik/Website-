@@ -2,7 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     background: linear-gradient(to bottom, #080808, #700101);
+}
    
+
 
 header {
     background: #333;
@@ -16,6 +18,37 @@ header {
 .logo {
     font-size: 2rem;
     margin-right: 20px;
+}
+
+.hidden-ad {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 15px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Центровка содержимого */
+    z-index: 1000;
+    border-radius: 8px;
+}
+
+.hidden-ad img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Отступ от текста */
+}
+
+.hidden-ad button {
+    background: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 4px;
 }
 
 .search-form {
@@ -42,7 +75,7 @@ header {
 }
 
 .search-form button:hover {
-    background-color: #0056b3; /* Темнее при наведении */
+    background-color: #0056b3; 
 }
 
 nav a {
@@ -53,7 +86,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #1b1c1d; /* Подсветка при наведении */
+    color: #1b1c1d; 
 }
 
 
@@ -119,34 +152,31 @@ nav a:hover {
     text-decoration: none;
     color: rgb(99, 7, 7);
     font-size: 20px;
-    display: flex; /* Используйте flexbox для выравнивания */
-    justify-content: center; /* Центрирование по горизонтали */
+    display: flex; 
+    justify-content: center; 
     
 }
 
 .film-card img {
-    
-    width: 400px;
-    height: 600px;
-    border-radius: 5px; /* Скругление углов изображений */
+    width: 60% ;
+    height: auto;
+    border-radius: 5px; 
     margin: 10px auto 20px;
     display: block;
 }
 
-
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #080405;
+footer{
+    background-color: black;
+    padding: 32px 0 32px;
     color: #1a5e4c;
-    position: relative;
-    bottom: 0;
-    left:0;
-    width: 100%;
-}   
+    text-align: center;
+}
+
+
+
 .film-row {
     display: flex;
-    gap: 100px;
+    gap: 80px;
 }
 .Mainposter {
     position: relative;
@@ -160,7 +190,7 @@ footer {
     height: 100%;
     backface-visibility: hidden;
     transition: transform 0.6s;
-    border-radius: 5px; /* Скругление углов */  
+    border-radius: 5px; 
 }
 
 
@@ -195,11 +225,23 @@ footer {
         display: flex;
         justify-content: space-between;
     }
-
     .main-content {
         display: flex;
         flex-direction: column;
         flex-grow: 1;
         margin-left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .genre-menu {
+        width: 100%;
+    }
+    .advertisement {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .film-row {
+        flex-direction: column;
     }
 }
