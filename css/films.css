@@ -91,3 +91,46 @@
     border-bottom: 1px solid #ccc; 
     padding-bottom: 10px;
     }
+
+@media (max-width: 768px) {
+    .poster {
+        width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .info {
+        padding: 10px;
+    }
+
+    .containerfilm {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .rating {
+        right: 20px;
+    }
+
+    .comments-section, .published-comments {
+        width: 90%;
+        margin: 20px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .poster {
+        width: 100%;
+        height: auto;
+    }
+
+    .containerfilm {
+        width: 100%;
+    }
+
+    .comments-section, .published-comments {
+        width: 100%;
+        margin: 10px auto;
+    }
+}
