@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Киногид - Рецензии на фильмы</title>
-    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/reklama.js"></script>
 </head>
 
 <body>
@@ -32,42 +33,6 @@
     <p>🔥 Эксклюзивное предложение для киноманов! Узнай больше.</p>
     <button onclick="hideAd()">Закрыть</button>
 </div>
-
-<script>
-    // Функция для проверки прокрутки
-    window.addEventListener('scroll', function () {
-        const scrollPosition = window.scrollY || document.documentElement.scrollTop;
-        const pageHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        const middlePosition = pageHeight / 2;
-
-        // Если пользователь прокрутил до середины страницы
-        if (scrollPosition >= middlePosition) {
-            const ad = document.getElementById('hidden-ad');
-            if (ad && ad.style.display === 'none') {
-                ad.style.display = 'block'; // Показываем рекламу
-            }
-        }
-    });
-
-    // Функция для скрытия рекламы
-    function hideAd() {
-        const ad = document.getElementById('hidden-ad');
-        if (ad) {
-            ad.style.display = 'none';
-        }
-    }
-</script>
-
-    // Функция для скрытия рекламы
-    function hideAd() {
-        const ad = document.getElementById('hidden-ad');
-        if (ad) {
-            ad.style.display = 'none';
-            localStorage.setItem('adClosed', 'true'); // Сохраняем состояние
-        }
-    }
-</script>
-
     <div class="container">
         <div class="row">
             <!-- Боковое меню с жанрами --> 

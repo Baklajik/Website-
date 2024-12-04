@@ -7,6 +7,7 @@
     <title>Киногид - Рецензии на фильмы</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/films.css">
+    <script src="js/dropdown.js"></script>
 </head>
 
 <body>
@@ -24,19 +25,10 @@
             <a href="registry.html">Регистрация/Вход</a>
         </nav>
     </header>
-
     <div class="containerfilm"> 
         <img src="https://thumbs.dfs.ivi.ru/storage5/contents/6/1/0ceca03c51c3d38f34bdf3fd0dd2c8.jpg"  class="poster"> 
-        <div class="dropdown"> 
-            <button onclick="toggleDropdown(this)">Добаввить в закладки</button> 
-            <div class="dropdown-content">                
-                <a href="#">Буду смотреть</a>
-                <a href="#">Смотрю</a>
-                <a href="#">Просмотрено</a>    
-            </div> 
-        </div>
         <div class="info">
-             <h1>1+1</h1>
+             <h1>1+1 <span class="rating">8.8/10</span></h1>
              <p>Intouchable 18+</p>
              <h2>О фильме</h2>
              <p><strong>Год выпуска:</strong> 2011</p> 
@@ -50,6 +42,14 @@
              <p><strong>Сборы в США:</strong> $10 198 820</p> 
              <p><strong>Сборы в мире:</strong> + $416 389 690 = $426 588 510</p>  
              <p><strong>Краткое описание:</strong> Пострадав в результате несчастного случая, богатый аристократ Филипп нанимает в помощники человека, который менее всего подходит для этой работы, – молодого жителя предместья Дрисса, только что освободившегося из тюрьмы. Несмотря на то, что Филипп прикован к инвалидному креслу, Дриссу удается привнести в размеренную жизнь аристократа дух приключений.</p> 
+             <div class="dropdown"> 
+                <button onclick="toggleDropdown(this)">Добавить в закладки</button> 
+                <div class="dropdown-content">                
+                    <a href="#">Буду смотреть</a>
+                    <a href="#">Смотрю</a>
+                    <a href="#">Просмотрено</a>    
+                </div> 
+            </div>       
             </div> 
     </div>
 
@@ -75,18 +75,6 @@
     <footer>
         <p>&copy; 2024 Киногид. Все права защищены.</p>
     </footer>
-    <script> 
-        function toggleDropdown(element) { 
-            element.classList.toggle("active"); 
-            var dropdownContent = element.nextElementSibling; 
-            if (dropdownContent.style.display === "block") { 
-                dropdownContent.style.display = "none"; 
-            } 
-            else { 
-                dropdownContent.style.display = "block"; 
-            } 
-        } 
-    </script>
 </body>
 
 </html>

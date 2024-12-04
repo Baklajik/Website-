@@ -1,23 +1,29 @@
+.poster-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 .poster { 
-    width: 302px; 
-    height: 440px; 
-    margin-right: 20px; 
-    } 
+    width: 30%; 
+    height: 580px; 
+    margin-bottom: 20px; 
+} 
 
 .info { 
     background: #fff; 
     padding: 20px; 
     flex-grow: 1;
-    }
+}
 
 .info h1, .info h2 { 
     margin: 0; 
     padding-bottom: 10px; 
-    } 
+} 
 
 .info p { 
     margin: 10px 0; 
-    }
+}
 
 .containerfilm { 
     display: flex; 
@@ -26,15 +32,16 @@
     justify-content: flex-start; 
     width: 80%; 
     margin: auto; 
-    }
+    position: relative;
+}
 
 .rating { 
     font-size: 30px; 
     font-weight: bold; 
-    color: #00ff2a; 
+    color: #000000; 
     position: absolute;
-    right: 230px; 
-    }
+    right: 5%; 
+}
     
 .comments-section { 
     background: #fff; 
@@ -42,12 +49,12 @@
     width: 78%; 
     margin-top: 20px; 
     margin-left: 150px;
-    } 
+} 
 
 .comments-section h2 { 
     margin: 0; 
     padding-bottom: 10px; 
-    } 
+} 
 
 .comments-section textarea { 
     width: 98%; 
@@ -57,7 +64,7 @@
     border: 1px solid #ccc; 
     border-radius: 4px; 
     resize: vertical; 
-    } 
+} 
 
 .comments-section button { 
     margin-top: 10px; 
@@ -67,11 +74,11 @@
     border: none; 
     border-radius: 4px; 
     cursor: pointer; 
-    } 
+} 
 
 .comments-section button:hover { 
     background-color: #45a049; 
-    }
+}
 
 .published-comments { 
     background: #fff; 
@@ -79,27 +86,28 @@
     width: 78%; 
     margin-top: 20px; 
     margin-left: 150px; 
-    } 
+} 
 
 .published-comments h2 { 
     margin: 0; 
     padding-bottom: 10px; 
-    } 
+} 
 
 .comment {
     margin-top: 10px; 
     border-bottom: 1px solid #ccc; 
     padding-bottom: 10px;
-    }
+}
 
 .dropdown {
-    margin-bottom: 20px;
+    width: 23%;
+    padding-left: 1%; 
 }
 
 .dropdown button {
-    width: 100%;
-    background: #f4f4f4;
-    color: black;
+    width: 100%; 
+    background-color: #700101; 
+    color: rgb(233, 226, 226);
     padding: 10px;
     border: none;
     cursor: pointer;
@@ -109,6 +117,7 @@
 }
 
 .dropdown-content {
+    width: 14%;
     max-height: 150px;
     overflow-y: auto;
     display: none;
@@ -116,6 +125,7 @@
     padding: 10px;
     border-radius: 5px;
     margin-top: 5px;
+    position: absolute;
 }
 
 .dropdown-content a {
@@ -126,6 +136,10 @@
 }
 
 @media (max-width: 768px) {
+    .poster-container {
+        width: 100%;
+    }
+
     .poster {
         width: 100%;
         height: auto;
@@ -153,6 +167,10 @@
 }
 
 @media (max-width: 480px) {
+    .poster-container {
+        width: 100%;
+    }
+
     .poster {
         width: 100%;
         height: auto;
