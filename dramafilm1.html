@@ -27,8 +27,16 @@
 
     <div class="containerfilm"> 
         <img src="https://thumbs.dfs.ivi.ru/storage5/contents/6/1/0ceca03c51c3d38f34bdf3fd0dd2c8.jpg"  class="poster"> 
+        <div class="dropdown"> 
+            <button onclick="toggleDropdown(this)">Добаввить в закладки</button> 
+            <div class="dropdown-content">                
+                <a href="#">Буду смотреть</a>
+                <a href="#">Смотрю</a>
+                <a href="#">Просмотрено</a>    
+            </div> 
+        </div>
         <div class="info">
-             <h1>1+1 <span class="rating">8.8/10</span></h1>
+             <h1>1+1</h1>
              <p>Intouchable 18+</p>
              <h2>О фильме</h2>
              <p><strong>Год выпуска:</strong> 2011</p> 
@@ -67,6 +75,18 @@
     <footer>
         <p>&copy; 2024 Киногид. Все права защищены.</p>
     </footer>
+    <script> 
+        function toggleDropdown(element) { 
+            element.classList.toggle("active"); 
+            var dropdownContent = element.nextElementSibling; 
+            if (dropdownContent.style.display === "block") { 
+                dropdownContent.style.display = "none"; 
+            } 
+            else { 
+                dropdownContent.style.display = "block"; 
+            } 
+        } 
+    </script>
 </body>
 
 </html>

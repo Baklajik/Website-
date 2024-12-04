@@ -1,6 +1,6 @@
 .poster { 
     width: 302px; 
-    height: 540px; 
+    height: 440px; 
     margin-right: 20px; 
     } 
 
@@ -91,6 +91,39 @@
     border-bottom: 1px solid #ccc; 
     padding-bottom: 10px;
     }
+
+.dropdown {
+    margin-bottom: 20px;
+}
+
+.dropdown button {
+    width: 100%;
+    background: #f4f4f4;
+    color: black;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.dropdown-content {
+    max-height: 150px;
+    overflow-y: auto;
+    display: none;
+    background: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 5px 0;
+}
 
 @media (max-width: 768px) {
     .poster {
