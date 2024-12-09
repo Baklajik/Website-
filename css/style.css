@@ -171,6 +171,7 @@ nav a:hover {
     border-radius: 5px; 
     margin: 10px auto 20px;
     display: block;
+    
 }
 
 footer{
@@ -184,13 +185,23 @@ footer{
 
 .film-row {
     display: flex;
-    gap: 80px;
+    flex-wrap: wrap; /* Позволяет элементам переходить на следующую строку */
+    gap: 20px; /* Расстояние между карточками */
 }
+
+.film-card {
+    flex: 1 1 calc(33.333% - 20px); /* Три карточки в строке с отступами */
+    box-sizing: border-box; /* Учитывает отступы в ширине */
+}
+
 .Mainposter {
     position: relative;
     width: 250px;
     height: 350px;
     perspective: 1000px;
+    margin: 0 auto; 
+    display:block;
+    
 }
 
 .Mainposter img {
@@ -199,6 +210,8 @@ footer{
     backface-visibility: hidden;
     transition: transform 0.6s;
     border-radius: 5px; 
+  
+    
 }
 
 
