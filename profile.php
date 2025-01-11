@@ -1,3 +1,11 @@
+<?php
+session_start();
+if (!isset($_SESSION['user_id'])) {
+    echo "Сначала войдите в аккаунт.";
+    exit;
+}
+$username = $_SESSION['username'];
+?>
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -25,7 +33,7 @@
     <div class="profile-container">
         <div class="profile-header">
             <img src="https://pikuco.ru/upload/test_stable/512/512ecf62fa0b8d2b533d867cf0fc4667.webp" alt="Фото профиля" class="profile-photo">
-            <h1 class="profile-nick">Denis Denisevich</h1>
+            <h1 class="profile-nick"><?php echo htmlspecialchars($username); ?></h1>
         </div>
         <div class="tabs">
             <button class="tab-button" onclick="showTab('watched')">Просмотрено</button>

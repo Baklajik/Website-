@@ -255,8 +255,9 @@ footer{
 }
 
 @media (max-width: 768px) {
+
     .genre-menu {
-        width: 100%;
+        display: none;
     }
     .advertisement {
         width: 100%;
